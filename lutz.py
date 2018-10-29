@@ -25,12 +25,19 @@ def WorkMulti(inName):
   engineers = {'bob', 'sue', 'ann', 'vic'}
   managers = {'tom', 'sue'}
   try:
+    # page 189
     if inName in engineers:
       print(inName, " is engineer")
     else:
       print(inName, " is not engineer")
+    #
+    print("two vacancy: ",engineers & managers)
+    print("all vacs: ",engineers | managers)
+    print("all manag: ",engineers - managers)
+    print("all engin: ",managers - engineers)
   except KeyError:
     print("Error: input")
+    raise KeyError
   except OSError:
     print("Error: other problem")
   finally:
@@ -41,5 +48,5 @@ if __name__ == '__main__':
   #TestSqrt(8)
   inMess = 'test'
   while inMess != 'quit':
-    inMess = input()
+    inMess = input("input: ")
     WorkMulti(inMess)
