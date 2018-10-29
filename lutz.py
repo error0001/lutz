@@ -35,6 +35,7 @@ def WorkMulti(inName):
     print("all vacs: ",engineers | managers)
     print("all manag: ",engineers - managers)
     print("all engin: ",managers - engineers)
+     #
   except KeyError:
     print("Error: input")
     raise KeyError
