@@ -61,6 +61,15 @@ if __name__ == '__main__':
   2) К элементу где содержится pa, переделать в список
   3) после сложить все элементы
   '''
-  S = 's,pa,m'
-  L = S.split(' ')
-  print(L)
+  # the first method
+  print("1: ")
+  L1 = list('s,pa,m')
+  print(L1)
+  for x in L1:
+    if x == ',':
+      L1.remove(',')
+  print(L1)
+
+  #L = S.split(',')
+  
+  #print(L)
