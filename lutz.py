@@ -47,7 +47,20 @@ def WorkMulti(inName):
 if __name__ == '__main__':
   print("start main")
   #TestSqrt(8)
+  '''
   inMess = 'test'
   while inMess != 'quit':
     inMess = input("input: ")
     WorkMulti(inMess)
+  '''
+  #page 250, 
+  '''
+  S = "s,pa,m"
+  Указать два способа извлечения строки в символы
+  1) Мы должны строку преобразовать в список
+  2) К элементу где содержится pa, переделать в список
+  3) после сложить все элементы
+  '''
+  S = 's,pa,m'
+  L = S.split(' ')
+  print(L)
